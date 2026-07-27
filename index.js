@@ -5,8 +5,8 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
-const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
+const TELEGRAM_BOT_TOKEN = '8837777955:AAFMcHE1hF4rO6lgnT1XEAT2h8JBmb79mq4';
+const TELEGRAM_CHAT_ID = '-1004330253784';
 
 app.get('/postback', async (req, res) => {
     const { name, ip, offer, city, country, payout } = req.query;
